@@ -1,6 +1,6 @@
 # Intro
 
-This repository contains the code to replicate the experiments of the paper "ROSARL: Reward-Only Safe Reinforcement Learning". The paper introduces a new framework for safe RL where the agent learns safe policies solely from scalar rewards using any suitable RL algorithm. This is achieved by replacing the rewards at unsafe terminal states by the minmax penalty, which is the exact highest reward whose optimal policy minimises the probability of reaching unsafe states.
+This repository contains the code to replicate the experiments of the paper "ROSARL: Reward-Only Safe Reinforcement Learning". The paper introduces a new framework for safe RL where the agent learns safe policies solely from scalar rewards using any suitable RL algorithm. This is achieved by replacing the rewards at unsafe terminal states by the minmax penalty, which is the strict upperbound reward whose optimal policy minimises the probability of reaching unsafe states.
 
 ![Trajectories from learned policies of baselines vs ours](algorithms_trajectories.png)
 
@@ -70,7 +70,7 @@ This repository contains the code to replicate the experiments of the paper "ROS
 
 ## Supported RL Algorithms and General Usage
 
-ROSARL is compatible with any RL Algorithm. One can simply [estimate the minmax penalty](learning_minmax_penalty.py) during learning, and replace the environments rewards at unsafe states with it. See [learning_minmax_penalty.py](learning_minmax_penalty.py) for a simple method of estimating the minamx penalty during learning by using the value function being learned by an RL algorithm. 
+ROSARL is compatible with any RL Algorithm. One can simply estimate the minmax penalty during learning, and replace the environments rewards at unsafe states with it. See [learning_minmax_penalty.py](learning_minmax_penalty.py) for a simple method of estimating the minmax penalty during learning by using the value function being learned by an RL algorithm. 
 
 # Running the Safety Gym experiments
 
