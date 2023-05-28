@@ -2,7 +2,6 @@ absl-py==1.2.0
 astor==0.8.1
 astunparse==1.6.3
 cachetools==5.2.0
-certifi @ file:///croot/certifi_1671487769961/work/certifi
 cffi==1.15.1
 charset-normalizer==2.1.0
 cloudpickle==1.2.2

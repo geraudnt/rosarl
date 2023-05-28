@@ -27,7 +27,7 @@ def run_policy(env, get_action, max_ep_len=None, num_episodes=1, render=True, sa
     seed = seed if not noseed else -1
     while saved<num_episodes: # n < num_episodes:
         seed = seed if not noseed else seed+2
-        # name = f'../../videos/point_goal1_hard/cpo_s{seed}'
+        name = f'../../videos/point_goal1_hard/cpo_s{seed}'
         # env = gym.make("Safexp-PointGoal1-TerminalUnsafe-v0")
         
         env.seed(seed)
