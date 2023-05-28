@@ -82,6 +82,11 @@ python enjoy.py data/path/to/experiment
 ```
 
 
+![Trajectories from learned policies of TRPO](safety_ai_gym/videos/point_goal1_terminal_unsafe/trpo_s1_success.gif)
+![Trajectories from learned policies of TRPO](safety_ai_gym/videos/point_goal1_terminal_unsafe/trpo_s17_success.gif)
+![Trajectories from learned policies of TRPO](safety_ai_gym/videos/point_goal1_terminal_unsafe/trpo_s29_success.gif)
+![Trajectories from learned policies of TRPO](safety_ai_gym/videos/point_goal1_terminal_unsafe/trpo_s39_success.gif)
+
 ## Cite the Paper
 
 If you use this work, please cite:
