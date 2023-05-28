@@ -52,7 +52,7 @@ This repository contains the code to replicate the experiments of the paper "ROS
     <td><img src="safety_ai_gym/videos/point_goal1_terminal_unsafe/cpo_s35_failure.gif" alt="2" width = auto height = auto></td>
   </tr>
   <tr>
-    <th rowspan="2" scope="rowgroup">TRPO Minmax</th>
+    <th rowspan="2" scope="rowgroup">TRPO Minmax (Ours)</th>
     <td style="text-align:center"> Success </td>
     <td> <img src="safety_ai_gym/videos/point_goal1_terminal_unsafe/trpo_minmax_s3_success.gif"  alt="1" width = auto height = auto ></td>
     <td><img src="safety_ai_gym/videos/point_goal1_terminal_unsafe/trpo_minmax_s5_success.gif" alt="2" width = auto height = auto></td>
