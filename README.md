@@ -4,6 +4,70 @@ This repository contains the code to replicate the experiments of the paper "ROS
 
 ![Trajectories from learned policies of baselines vs ours](algorithms_trajectories.png)
 
+
+<table style="align-items: center;white-space: nowrap;display: flex;flex-direction: column;">
+  <tr>
+    <th rowspan="2" scope="rowgroup">TRPO</th>
+    <td style="text-align:center"> Success </td>
+    <td> <img src="safety_ai_gym/videos/point_goal1_terminal_unsafe/trpo_s1_success.gif"  alt="1" width = auto height = auto ></td>
+    <td><img src="safety_ai_gym/videos/point_goal1_terminal_unsafe/trpo_s17_success.gif" alt="2" width = auto height = auto></td>
+    <td><img src="safety_ai_gym/videos/point_goal1_terminal_unsafe/trpo_s29_success.gif" alt="2" width = auto height = auto></td>
+    <td><img src="safety_ai_gym/videos/point_goal1_terminal_unsafe/trpo_s39_success.gif" alt="2" width = auto height = auto></td>
+   </tr> 
+   <tr>
+    <td style="text-align:center"> Failure </td>
+    <td> <img src="safety_ai_gym/videos/point_goal1_terminal_unsafe/trpo_s3_failure.gif"  alt="1" width = auto height = auto ></td>
+    <td><img src="safety_ai_gym/videos/point_goal1_terminal_unsafe/trpo_s5_failure.gif" alt="2" width = auto height = auto></td>
+    <td><img src="safety_ai_gym/videos/point_goal1_terminal_unsafe/trpo_s7_failure.gif" alt="2" width = auto height = auto></td>
+    <td><img src="safety_ai_gym/videos/point_goal1_terminal_unsafe/trpo_s9_failure.gif" alt="2" width = auto height = auto></td>
+  </tr>
+  <tr>
+    <th rowspan="2" scope="rowgroup">TRPO Lagrangian</th>
+    <td style="text-align:center"> Success </td>
+    <td> <img src="safety_ai_gym/videos/point_goal1_terminal_unsafe/trpo_lagrangian_s1_success.gif"  alt="1" width = auto height = auto ></td>
+    <td><img src="safety_ai_gym/videos/point_goal1_terminal_unsafe/trpo_lagrangian_s3_success.gif" alt="2" width = auto height = auto></td>
+    <td><img src="safety_ai_gym/videos/point_goal1_terminal_unsafe/trpo_lagrangian_s15_success.gif" alt="2" width = auto height = auto></td>
+    <td><img src="safety_ai_gym/videos/point_goal1_terminal_unsafe/trpo_lagrangian_s23_success.gif" alt="2" width = auto height = auto></td>
+   </tr> 
+   <tr>
+    <td style="text-align:center"> Failure </td>
+    <td> <img src="safety_ai_gym/videos/point_goal1_terminal_unsafe/trpo_lagrangian_s5_failure.gif"  alt="1" width = auto height = auto ></td>
+    <td><img src="safety_ai_gym/videos/point_goal1_terminal_unsafe/trpo_lagrangian_s7_failure.gif" alt="2" width = auto height = auto></td>
+    <td><img src="safety_ai_gym/videos/point_goal1_terminal_unsafe/trpo_lagrangian_s9_failure.gif" alt="2" width = auto height = auto></td>
+    <td><img src="safety_ai_gym/videos/point_goal1_terminal_unsafe/trpo_lagrangian_s11_failure.gif" alt="2" width = auto height = auto></td>
+  </tr>
+  <tr>
+    <th rowspan="2" scope="rowgroup">CPO</th>
+    <td style="text-align:center"> Success </td>
+    <td> <img src="safety_ai_gym/videos/point_goal1_terminal_unsafe/cpo_s1_success.gif"  alt="1" width = auto height = auto ></td>
+    <td><img src="safety_ai_gym/videos/point_goal1_terminal_unsafe/cpo_s3_success.gif" alt="2" width = auto height = auto></td>
+    <td><img src="safety_ai_gym/videos/point_goal1_terminal_unsafe/cpo_s5_success.gif" alt="2" width = auto height = auto></td>
+    <td><img src="safety_ai_gym/videos/point_goal1_terminal_unsafe/cpo_s7_success.gif" alt="2" width = auto height = auto></td>
+   </tr> 
+   <tr>
+    <td style="text-align:center"> Failure </td>
+    <td> <img src="safety_ai_gym/videos/point_goal1_terminal_unsafe/cpo_s9_failure.gif"  alt="1" width = auto height = auto ></td>
+    <td><img src="safety_ai_gym/videos/point_goal1_terminal_unsafe/cpo_s25_failure.gif" alt="2" width = auto height = auto></td>
+    <td><img src="safety_ai_gym/videos/point_goal1_terminal_unsafe/cpo_s33_failure.gif" alt="2" width = auto height = auto></td>
+    <td><img src="safety_ai_gym/videos/point_goal1_terminal_unsafe/cpo_s35_failure.gif" alt="2" width = auto height = auto></td>
+  </tr>
+  <tr>
+    <th rowspan="2" scope="rowgroup">TRPO Minmax</th>
+    <td style="text-align:center"> Success </td>
+    <td> <img src="safety_ai_gym/videos/point_goal1_terminal_unsafe/trpo_minmax_s3_success.gif"  alt="1" width = auto height = auto ></td>
+    <td><img src="safety_ai_gym/videos/point_goal1_terminal_unsafe/trpo_minmax_s5_success.gif" alt="2" width = auto height = auto></td>
+    <td><img src="safety_ai_gym/videos/point_goal1_terminal_unsafe/trpo_minmax_s9_success.gif" alt="2" width = auto height = auto></td>
+    <td><img src="safety_ai_gym/videos/point_goal1_terminal_unsafe/trpo_minmax_s13_success.gif" alt="2" width = auto height = auto></td>
+   </tr> 
+   <tr>
+    <td style="text-align:center"> Failure </td>
+    <td> <img src="safety_ai_gym/videos/point_goal1_terminal_unsafe/trpo_minmax_s1_failure.gif"  alt="1" width = auto height = auto ></td>
+    <td><img src="safety_ai_gym/videos/point_goal1_terminal_unsafe/trpo_minmax_s7_failure.gif" alt="2" width = auto height = auto></td>
+    <td><img src="safety_ai_gym/videos/point_goal1_terminal_unsafe/trpo_minmax_s11_failure.gif" alt="2" width = auto height = auto></td>
+    <td><img src="safety_ai_gym/videos/point_goal1_terminal_unsafe/trpo_minmax_s25_failure.gif" alt="2" width = auto height = auto></td>
+  </tr>
+</table>
+
 ## Supported RL Algorithms and General Usage
 
 ROSARL is compatible with any RL Algorithm. One can simply [estimate the minmax penalty](learning_minmax_penalty.py) during learning, and replace the environments rewards at unsafe states with it. See [learning_minmax_penalty.py](learning_minmax_penalty.py) for a simple method of estimating the minamx penalty during learning by using the value function being learned by an RL algorithm. 
@@ -80,9 +144,6 @@ python plot.py data/path/to/experiment
 cd /path/to/safety-starter-agents/scripts
 python enjoy.py data/path/to/experiment
 ```
-
-|--- | --- | --- | --- |
-|![Trajectories from learned policies of TRPO](safety_ai_gym/videos/point_goal1_terminal_unsafe/trpo_s1_success.gif) | ![Trajectories from learned policies of TRPO](safety_ai_gym/videos/point_goal1_terminal_unsafe/trpo_s17_success.gif) | ![Trajectories from learned policies of TRPO](safety_ai_gym/videos/point_goal1_terminal_unsafe/trpo_s29_success.gif) | ![Trajectories from learned policies of TRPO](safety_ai_gym/videos/point_goal1_terminal_unsafe/trpo_s39_success.gif) |
 
 ## Cite the Paper
 
