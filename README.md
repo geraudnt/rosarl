@@ -77,13 +77,15 @@ python plot.py data/path/to/experiment
 
 <table style="align-items: center;white-space: nowrap;display: flex;flex-direction: column;">
   <tr>
-    <th columnspan="2" scope="columngroup"><img src="safety_ai_gym/images/_legend.pdf" alt="2" width = auto height = auto></th>
-    <td><img src="safety_ai_gym/images/_cumulativecost_nolegend.pdf" alt="2" width = auto height = auto></td>
-    <td><img src="safety_ai_gym/images/_averageepcost_nolegend.pdf" alt="2" width = auto height = auto></td>
+	  <th colspan="2"><img src="safety_ai_gym/images/_legend.png" alt="2" width = auto height = auto></th>
+  </tr>
+  <tr>
+    <td><img src="safety_ai_gym/images/_cumulativecost_nolegend.png" alt="2" width = auto height = auto></td>
+    <td><img src="safety_ai_gym/images/_averageepcost_nolegend.png" alt="2" width = auto height = auto></td>
   </tr>   
   <tr>
-    <td><img src="safety_ai_gym/images/_eplen_nolegend.pdf" alt="2" width = auto height = auto></td>
-    <td><img src="safety_ai_gym/images/_averageepret_nolegend.pdf" alt="2" width = auto height = auto></td>
+    <td><img src="safety_ai_gym/images/_eplen_nolegend.png" alt="2" width = auto height = auto></td>
+    <td><img src="safety_ai_gym/images/_averageepret_nolegend.png" alt="2" width = auto height = auto></td>
   </tr> 
 </table>
 
