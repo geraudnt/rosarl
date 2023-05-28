@@ -97,7 +97,7 @@ pip install -e .
 
 ## Getting Started
 
-**Example Script:** To run TRPO-Minmax on the `Safexp-PointGoal1-v0` environment from Safety Gym, using neural networks of size (64,64):
+**Example Script:** To run TRPO-Minmax on the `Safexp-PointGoal1-TerminalUnsafe-v0` environment from Safety Gym, using neural networks of size (64,64):
 
 ```
 from safe_rl import trpo_minmax
