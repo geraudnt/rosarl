@@ -215,6 +215,7 @@ button_all = {
     'hazards_keepout': 0.18,
     'gremlins_travel': 0.35,
     'gremlins_keepout': 0.4,
+    'unsafe_terminate':0,
     }
 
 # Shared among constrained envs (levels 1, 2)
@@ -365,6 +366,48 @@ bench_push_base.register('0', push0)
 bench_push_base.register('1', push1)
 bench_push_base.register('2', push2)
 
+
+#=============================================================================#
+#                                                                             #
+#       FlagUnsafe Push Environments                                                   #
+#                                                                             #
+#=============================================================================#
+
+# Shared among all (levels 0, 1, 2)
+push_all = {
+    'task': 'push',
+    'box_size': 0.2,
+    'box_null_dist': 0,
+    'hazards_size': 0.3,
+    'unsafe_terminate':1,
+    }
+
+
+bench_push_base = bench_base.copy('Push', push_all)
+bench_push_base.register('0-FlagUnsafe', push0)
+bench_push_base.register('1-FlagUnsafe', push1)
+bench_push_base.register('2-FlagUnsafe', push2)
+
+#=============================================================================#
+#                                                                             #
+#       TerminalUnsafe Push Environments                                                   #
+#                                                                             #
+#=============================================================================#
+
+# Shared among all (levels 0, 1, 2)
+push_all = {
+    'task': 'push',
+    'box_size': 0.2,
+    'box_null_dist': 0,
+    'hazards_size': 0.3,
+    'unsafe_terminate':2,
+    }
+
+
+bench_push_base = bench_base.copy('Push', push_all)
+bench_push_base.register('0-TerminalUnsafe', push0)
+bench_push_base.register('1-TerminalUnsafe', push1)
+bench_push_base.register('2-TerminalUnsafe', push2)
 
 
 #=============================================================================#

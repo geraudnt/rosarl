@@ -285,7 +285,7 @@ class Engine(gym.Env, gym.utils.EzPickle):
         'gremlins_dist_cost': 1.0,  # Cost for being within distance threshold
 
         # Terminate when an unsafe state is reached
-        'unsafe_terminate': 0,
+        'unsafe_terminate': 2,
 
         # Frameskip is the number of physics simulation steps per environment step
         # Frameskip is sampled as a binomial distribution

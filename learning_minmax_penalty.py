@@ -2,17 +2,17 @@
 class MinMaxPenalty():
     """
     Learn the highest reward/penalty that minimises the probability of reaching bad terminal states 
-    Arguments:
-        - rmin (optional) (Str): The lower bound for environment rewards
-        - rmax (optional) (Str): The upper bound for environment rewards   
-    Return:
-        - The minmax penalty estimate
+    Init:
+        - rmin (optional): The lower bound for environment rewards
+        - rmax (optional): The upper bound for environment rewards   
+    Update:
+        - Returns the minmax penalty estimate
     Usage:
-    Symlink to the desired folder and import, or copy-paste to where needed
+    Symlink to the desired folder and import, or copy-paste to where needed in the code
     In training loop: 
         minmaxpenalty = MinMaxPenalty()
         for each step:
-            - take an action and get reward and q_value (or just [value] if using policy gradient)
+            - take an action and get reward and q_value (or just [value] if RL algorithm only learns state_values)
             penalty = minmaxpenalty.update(reward, Q[state])
             if info["unsafe"]:
                 reward = penalty
