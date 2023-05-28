@@ -75,17 +75,17 @@ python plot.py data/path/to/experiment
 ```
 
 
-<table style="align-items: center;white-space: nowrap;display: flex;flex-direction: column;">
+<table>
   <tr>
-	  <th colspan="2"><img src="safety_ai_gym/images/_legend.png" alt="2" width = auto height = auto></th>
+	  <th colspan="2"><img src="safety_ai_gym/images/_legend.png" alt="2" width = 400px height = auto></th>
   </tr>
   <tr>
-    <td><img src="safety_ai_gym/images/_cumulativecost_nolegend.png" alt="2" width = auto height = auto></td>
-    <td><img src="safety_ai_gym/images/_averageepcost_nolegend.png" alt="2" width = auto height = auto></td>
+    <td><img src="safety_ai_gym/images/_cumulativecost_nolegend.png" alt="2" width = 400px height = auto></td>
+    <td><img src="safety_ai_gym/images/_averageepcost_nolegend.png" alt="2" width = 400px height = auto></td>
   </tr>   
   <tr>
-    <td><img src="safety_ai_gym/images/_eplen_nolegend.png" alt="2" width = auto height = auto></td>
-    <td><img src="safety_ai_gym/images/_averageepret_nolegend.png" alt="2" width = auto height = auto></td>
+    <td><img src="safety_ai_gym/images/_eplen_nolegend.png" alt="2" width = 400px height = auto></td>
+    <td><img src="safety_ai_gym/images/_averageepret_nolegend.png" alt="2" width = 400px height = auto></td>
   </tr> 
 </table>
 
@@ -94,9 +94,10 @@ python plot.py data/path/to/experiment
 ```
 cd /path/to/safety-starter-agents/scripts
 python enjoy.py data/path/to/experiment
+```
 
 
-<table style="align-items: center;white-space: nowrap;display: flex;flex-direction: column;">
+<table>
   <tr>
     <th rowspan="2" scope="rowgroup">TRPO</th>
     <td style="text-align:center"> Success </td>
@@ -157,7 +158,7 @@ python enjoy.py data/path/to/experiment
     <td><img src="safety_ai_gym/videos/point_goal1_terminal_unsafe/trpo_minmax_s11_failure.gif" alt="2" width = auto height = auto></td>
     <td><img src="safety_ai_gym/videos/point_goal1_terminal_unsafe/trpo_minmax_s25_failure.gif" alt="2" width = auto height = auto></td>
   </tr>
-</table>```
+</table>
 
 
 ## Cite the Paper
