@@ -11,7 +11,7 @@ ROSARL is compatible with any RL Algorithm. One can simply estimate the minmax p
 # Running the Safety Gym experiments
 
 ## Installation
-These experiments use the [safety gym]([safety_ai_gym/safety-gym](https://github.com/openai/safety-gym)) code (but modified to include environments that terminate when reaching unsafe states), and the [safety starter agents]([safety_ai_gym/safety-starter-agents](https://github.com/openai/safety-starter-agents)) code (but modified to include TRPO-Minmax, which is just TRPO but modified to use the [learned Minmax penalty](learning_minmax_penalty.py)).   
+These experiments use the [safety gym](https://github.com/openai/safety-gym) code (but modified to include environments that terminate when reaching unsafe states), and the [safety starter agents](https://github.com/openai/safety-starter-agents) code (but modified to include TRPO-Minmax, which is just TRPO but modified to use the [learned Minmax penalty](learning_minmax_penalty.py)).   
 
 First install [openai mujoco](https://github.com/openai/mujoco-py). Then install the required packages:
 
@@ -163,7 +163,6 @@ python enjoy.py data/path/to/experiment
 
 ## Cite the Paper
 
-If you use this work, please cite:
 
 ```
 @article{NangueTasse2023,
