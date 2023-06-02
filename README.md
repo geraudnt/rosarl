@@ -1,6 +1,6 @@
 # Intro
 
-This repository contains the code to replicate the experiments of the paper "ROSARL: Reward-Only Safe Reinforcement Learning". The paper introduces a new framework for safe RL where the agent learns safe policies solely from scalar rewards using any suitable RL algorithm. This is achieved by replacing the rewards at unsafe terminal states by the minmax penalty, which is the strict upperbound reward whose optimal policy minimises the probability of reaching unsafe states.
+This repository contains the code to replicate the experiments of the paper "[ROSARL: Reward-Only Safe Reinforcement Learning](https://arxiv.org/pdf/2306.00035.pdf)". The paper introduces a new framework for safe RL where the agent learns safe policies solely from scalar rewards using any suitable RL algorithm. This is achieved by replacing the rewards at unsafe terminal states by the minmax penalty, which is the strict upperbound reward whose optimal policy minimises the probability of reaching unsafe states.
 
 ![Trajectories from learned policies of baselines vs ours](safety_ai_gym/images/algorithms_trajectories.png)
 
